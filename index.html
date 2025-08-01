@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schéma des Offres - Conseil Stratégique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+        }
+        
+        .gradient-express {
+            background: linear-gradient(135deg, #ddbea9 0%, #cb997e 100%);
+        }
+        
+        .gradient-vision {
+            background: linear-gradient(135deg, #f5e6d3 0%, #e6d7c3 100%);
+        }
+        
+        .gradient-duo {
+            background: linear-gradient(135deg, #c4a484 0%, #a89074 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .arrow-flow {
+            position: relative;
+        }
+        
+        .arrow-flow::after {
+            content: '→';
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #d4af37;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .arrow-flow::after {
+                content: '↓';
+                right: 50%;
+                top: 100%;
+                transform: translateX(50%);
+                bottom: -20px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen py-8" style="background: linear-gradient(135deg, #fefcf3 0%, #faf7f0 50%, #f5f1e8 100%);">
+    <div class="container mx-auto px-4 max-w-7xl">
+
+
+        <!-- Schéma des offres -->
+        <div class="grid lg:grid-cols-3 gap-8 mb-12">
+            <!-- Clarté EXPRESS -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden arrow-flow">
+                <div class="gradient-express text-white p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">Clarté EXPRESS</h2>
+                        <div class="bg-white bg-opacity-20 rounded-full p-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-lg opacity-90">L'aide ponctuelle pour une avancée concrète</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-2">Pour qui ?</h3>
+                        <p class="text-gray-600">Dirigeants débordés, désorganisés, noyés dans l'opérationnel</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Contenu :</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Audit ciblé (vision, offre, organisation)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Identification des points de friction
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Mise en place d'un système fluide
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Reprise de pouvoir sur l'agenda
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Ce que vous obtenez :</h3>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Diagnostic clair</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Recos personnalisées</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Système d'organisation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Dynamique sereine</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-2xl font-bold" style="color: #b8860b;">1 200 € HT</p>
+                                <p class="text-sm text-gray-500">4 semaines - 4 sessions</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-medium text-gray-700">Objectif :</p>
+                                <p class="text-xs text-gray-600">Clarté • Énergie • Maîtrise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision en ACTION -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden arrow-flow">
+                <div class="gradient-vision p-6" style="color: #5d4e37;">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">Vision en ACTION</h2>
+                        <div class="bg-white bg-opacity-20 rounded-full p-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-lg opacity-90">Votre vision, traduite en actions concrètes</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-2">Pour qui ?</h3>
+                        <p class="text-gray-600">Dirigeants ambitieux mais dispersés qui veulent un reset stratégique</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Contenu :</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Journée d'immersion stratégique
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                2 sessions de suivi mensuelles
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                6 réunions hebdo courtes
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 font-bold" style="color: #d4af37;">•</span>
+                                Carnet de pilotage personnalisé
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Ce que vous obtenez :</h3>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Stratégie trimestrielle</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Objectifs alignés</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Plan de pilotage</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Méthode & confiance</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-2xl font-bold" style="color: #b8860b;">2 500 € HT</p>
+                                <p class="text-sm text-gray-500">2 mois - 1 journée + 8 suivis</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-medium text-gray-700">Objectif :</p>
+                                <p class="text-xs text-gray-600">Vision • Croissance • Fluidité</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duo de CHOC -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="gradient-duo text-white p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">Duo de CHOC</h2>
+                        <div class="bg-white bg-opacity-50 rounded-full p-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-lg">Je pilote l'opérationnel pour que vous restiez au cap</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-2">Pour qui ?</h3>
+                        <p class="text-gray-600">Dirigeants avec petite équipe ou prestataires réguliers</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Contenu :</h3>
+                        <div class="space-y-4">
+                            <div class="p-3 rounded-lg border-l-4" style="background-color: #faf0e6; border-color: #ddbea9;">
+                                <h4 class="font-medium mb-2" style="color: #8b4513;">Côté management</h4>
+                                <ul class="text-sm space-y-1" style="color: #a0522d;">
+                                    <li>• Réunion d'équipe hebdo</li>
+                                    <li>• Suivi des missions</li>
+                                    <li>• Coordination & montée en compétence</li>
+                                </ul>
+                            </div>
+                            <div class="p-3 rounded-lg border-l-4" style="background-color: #fdf5e6; border-color: #f4a261;">
+                                <h4 class="font-medium mb-2" style="color: #d2691e;">Côté opérationnel</h4>
+                                <ul class="text-sm space-y-1" style="color: #cd853f;">
+                                    <li>• Suivi financier & plan d'actions</li>
+                                    <li>• Optimisation des offres</li>
+                                    <li>• Structuration outils & process</li>
+                                    <li>• Gestion de projets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-800 mb-3">Ce que vous gagnez :</h3>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Un relai fiable</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Process fluides</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Posture de leader</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-500 mr-2">✅</span>
+                                <span class="text-gray-600">Équipe responsabilisée</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-2xl font-bold" style="color: #a89074;">À partir de 1 800 €/mois HT</p>
+                                <p class="text-sm text-gray-500">Accompagnement modulable</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm font-medium text-gray-700">Objectif :</p>
+                                <p class="text-xs text-gray-600">Soulager • Fluidifier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parcours client -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Votre Parcours d'Accompagnement</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 border-2" style="background-color: #faf0e6; border-color: #ddbea9;">
+                        <span class="text-2xl font-bold" style="color: #b8860b;">1</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Démarrage</h3>
+                    <p class="text-sm text-gray-600">Clarté EXPRESS</p>
+                </div>
+                
+                <div class="hidden md:block text-4xl" style="color: #d4af37;">→</div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 border-2" style="background-color: #fefcf3; border-color: #f5e6d3;">
+                        <span class="text-2xl font-bold" style="color: #b8860b;">2</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Développement</h3>
+                    <p class="text-sm text-gray-600">Vision en ACTION</p>
+                </div>
+                
+                <div class="hidden md:block text-4xl" style="color: #d4af37;">→</div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 border-2" style="background-color: #f8f6f3; border-color: #c4a484;">
+                        <span class="text-2xl font-bold" style="color: #a89074;">3</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Structuration</h3>
+                    <p class="text-sm text-gray-600">Duo de CHOC</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9685c25b55dd7028',t:'MTc1NDA1NTc1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
